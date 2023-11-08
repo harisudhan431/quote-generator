@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Quote Of The Day</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-400">
+    <div class="container bg-white w-[700px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-[40px] rounded-[10px] text-center ">
+        <h2 class="text-[32px] mb-[40px] relative  after:content-[''] after:w-[75px] after:h-[3px] after:rounded-[3px] after:bg-blue-400 after:absolute after:bottom-[-10px] after:left-[50%] after:translate-x-[-50%]">Quote of the Day</h2>
+        <blockquote  id="quote" class="text-[26px] min-h-[110px]">Loading...</blockquote>
+        <span  id="author"  class=" block mt-[10px] float-right relative before:content-[''] before:w-[20px] before:h-[2px] before:bg-blue-400 before:absolute before:top-[50%] before:left-[-30px]">Loading...</span>
+        <div class="w-full mt-[50px] flex justify-center">
+            <button class="bg-blue-500 text-white border-[1px] border-solid border-blue-200 w-[150px] h-[50px] flex items-center justify-center m-[5px] cursor-pointer" onclick="getquote(api_url)">New Quote</button>
+            <button class="bg-white text-black border-[1px] border-solid border-blue-200 w-[150px] h-[50px] flex items-center justify-center m-[5px] cursor-pointer bg-transparent" onclick="tweet()"><img src="./download.png" class="w-[20px] mr-[10px]">Tweet</button>
+        </div>
+    </div>
+    <script  src="index.js"></script>
+</body>
+</html> 
